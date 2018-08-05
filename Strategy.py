@@ -431,7 +431,7 @@ class RL:
                                             
                                     else: # ARAS 알고리즘
                                         # 모든 weight를 1로 설정
-                                        action_weight = np.ones([batch_size,size_action_batch])f
+                                        action_weight = np.ones([batch_size,size_action_batch])
                                     # weight 값을 이용한 Q네트워크 training
                                     Q_Network.train_weighted_actor(state_t_batch, action_weight)
                                     
