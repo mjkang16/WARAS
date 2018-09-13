@@ -525,9 +525,9 @@ class RL:
                 plt.show()
                 
                 with open('/home/minjae/Desktop/JOLP/'+'Average_of_Distance_('+self.file_name+'_seed'+file_case+')', 'wb') as fout:
-                    pickle.dump(step_avg_list, fout)
+                    pickle.dump(average_distance, fout)
                 with open('/home/minjae/Desktop/JOLP/'+'Rate_of_Adjacent_('+self.file_name+'_global_'+'_seed'+file_case+')', 'wb') as fout2:
-                    pickle.dump(global_step_list, fout2)
+                    pickle.dump(rate_of_adjacent, fout2)
                 
                 p_values = list(range(1, episode+1))
                 q_values = average_distance[:]
@@ -616,9 +616,9 @@ class RL:
         plt.show()
         
         with open('/home/minjae/Desktop/JOLP/'+'Average_of_Distance_('+self.file_name+'_seed'+file_case+')', 'wb') as fout:
-            pickle.dump(step_avg_list, fout)
+            pickle.dump(average_distance, fout)
         with open('/home/minjae/Desktop/JOLP/'+'Rate_of_Adjacent_('+self.file_name+'_global_'+'_seed'+file_case+')', 'wb') as fout2:
-            pickle.dump(global_step_list, fout2)
+            pickle.dump(rate_of_adjacent, fout2)
         
         p_values = list(range(1, episode+1))
         q_values = average_distance[:]
